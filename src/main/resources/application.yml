@@ -1,0 +1,22 @@
+logging:
+  level:
+    root: INFO
+  file:
+    path: logs
+
+spring:
+  application:
+    name: exercise-app
+
+adapter:
+  flights:
+    crazyair:
+      enabled: false
+      connection-timeout-millis: 1000
+      base-url: https://example.com
+      flights-path: "/flights2"
+    toughjet:
+      enabled: false
+      connection-timeout-millis: 1000
+      base-url: https://example.com
+      flights-path: "/flights"
